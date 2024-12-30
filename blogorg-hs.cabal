@@ -1,0 +1,25 @@
+cabal-version:      3.0
+author:             Orest I
+build-type:         Simple
+-- copyright:
+-- description:
+extra-doc-files:    CHANGELOG.md
+-- extra-source-files:
+license-file:       LICENSE
+license:            BSD-2-Clause
+maintainer:         orest58008@yamadachi.quest
+name:               blogorg-hs
+-- synopsis:
+version:            0.1.0.0
+
+common warnings
+    ghc-options: -Wall
+
+executable blogorg-hs
+    build-depends:    base ^>=4.18.2.1
+    default-language: Haskell2010
+    hs-source-dirs:   app
+    import:           warnings
+    main-is:          Main.hs
+    -- other-extensions:
+    other-modules:    Html Html.Internal
